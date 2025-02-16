@@ -1,4 +1,4 @@
-package com.ozan;
+package com.ozan.day1and2;
 
 import java.util.Arrays;
 
