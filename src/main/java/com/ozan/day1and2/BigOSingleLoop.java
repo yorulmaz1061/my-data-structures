@@ -34,7 +34,7 @@ public class BigOSingleLoop {
             numberOfOperations += 1;
         }
         endTime = System.currentTimeMillis();
-        System.out.println("Number of operations with logarithmic: " + numberOfOperations + " in " + (endTime - startTime) + " in miliseconds");
+        System.out.println("Number of operations with logarithmic complexity: " + numberOfOperations + " in " + (endTime - startTime) + " in miliseconds");
 
         //Example=Triple nested loops
         numberOfOperations = 0;
