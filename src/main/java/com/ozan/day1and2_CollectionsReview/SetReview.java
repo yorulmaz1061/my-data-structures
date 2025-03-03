@@ -1,4 +1,6 @@
-package com.ozan.day1and2;
+package com.ozan.day1and2_CollectionsReview;
+
+import com.ozan.day1and2_CollectionsReview.arrayList.Student;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;

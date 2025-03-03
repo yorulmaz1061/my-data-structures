@@ -1,14 +1,16 @@
-package com.ozan.day1and2;
+package com.ozan.day1and2_CollectionsReview.arrayList;
 
 import java.util.Objects;
 
 public class Student {
     private int id;
     private String name;
+    //put constructors
     public Student(int id, String name) {
         this.id = id;
         this.name = name;
     }
+    //getter-setters-equals-hashCode-toString
     public int getId() {
         return id;
     }

@@ -1,4 +1,4 @@
-package com.ozan.day1and2;
+package com.ozan.day1and2_CollectionsReview;
 
 public class ArrayDemo {
     public static void main(String[] args) {

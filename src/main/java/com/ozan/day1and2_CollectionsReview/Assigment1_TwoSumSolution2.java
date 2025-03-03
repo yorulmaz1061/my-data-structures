@@ -1,4 +1,4 @@
-package com.ozan.day1and2;
+package com.ozan.day1and2_CollectionsReview;
 
 import java.util.Arrays;
 import java.util.HashMap;

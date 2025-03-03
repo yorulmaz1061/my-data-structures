@@ -1,4 +1,4 @@
-package com.ozan.day1and2;
+package com.ozan.day1and2_CollectionsReview;
 
 public class BigOSingleLoop {
     public static void main(String[] args) {

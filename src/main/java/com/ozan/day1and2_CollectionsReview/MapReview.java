@@ -1,7 +1,6 @@
-package com.ozan.day1and2;
+package com.ozan.day1and2_CollectionsReview;
 
 import java.util.HashMap;
-import java.util.Hashtable;
 import java.util.Map;
 import java.util.TreeMap;
 
