@@ -1,4 +1,4 @@
-package com.ozan.day03;
+package com.ozan.day03.demo1;
 
 public class Node {
     int id;
