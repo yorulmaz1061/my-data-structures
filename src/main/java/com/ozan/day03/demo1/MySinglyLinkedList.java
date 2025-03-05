@@ -16,7 +16,7 @@ public class MySinglyLinkedList {
             head = tail = node;
             size++;
 
-        } else {// if there are elements in list
+        } else {// if there are elements in list. It adds new node to tail.
             tail.next = node;
             tail = node;
             size++;
@@ -66,7 +66,6 @@ public class MySinglyLinkedList {
 
         }
 
-
     }
 
 
@@ -79,5 +78,92 @@ public class MySinglyLinkedList {
             }
             current = current.next;
         }
+
     }
+
+    int indexOf(int id) {
+        if (isEmpty()) return -1;
+        int position = 0;
+        //iterate through the list
+        Node current = head;  //set my current with starting element;
+        while (current != null) {
+            if (current.id == id) return position;
+            position++;
+            current = current.next;
+        }
+        return -1;
+
+    }
+
+    void addFirst(int data) {
+        Node node = new Node(data);
+        if (isEmpty()) {
+            head = tail = node;
+            size++;
+        } else {
+            //if you add node first adjust node.next to head.
+            node.next = head;
+            // now I should update my head
+            head = node;
+            size++;
+        }
+    }
+
+    public int getKthItemFromLast(int k) {
+        //create two pointers
+        //without any knowledge about the size
+        Node pointer1 = head;
+        Node pointer2 = head;
+        //move pointer2 k-1 times
+        for (int i = 0; i < k - 1; i++) {
+            pointer2 = pointer2.next;
+
+        }
+        //move pointers until pointer2 hits the last element
+        while (pointer2.next != null) {
+            pointer1 = pointer1.next;
+            pointer2 = pointer2.next;
+
+        }
+        //pointer is ont the kth element from the last
+        return pointer1.id;
+
+    }
+
+    public void removeKthFromEnd(int k) {
+        //create 3 pointers
+        Node pointer1 = head;
+        Node pointer2 = head;
+        Node previous = null;
+        // move pointer2 k-1 times
+        for (int i = 0; i < k - 1; i++) {
+            pointer2 = pointer2.next;
+        }
+        //move pointers until pointer2 hits the last element
+        while (pointer2.next != null) {
+            previous = pointer1;
+            pointer1 = pointer1.next;
+            pointer2 = pointer2.next;
+
+        }
+        //Do delete operation in 3 cases
+        if (pointer1==head){
+        head = pointer1.next;
+        pointer1.next = null;
+        size--;
+
+        } else if (pointer1==tail) {
+           tail = previous;
+           previous.next = null;
+           size--;
+        } else {
+            previous.next = pointer1.next;
+            pointer1.next = null;
+            size--;
+        }
+
+
+    }
+
+
 }
