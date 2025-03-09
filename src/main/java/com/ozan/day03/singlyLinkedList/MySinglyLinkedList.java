@@ -1,15 +1,15 @@
-package com.ozan.day03.demo1;
+package com.ozan.day03.singlyLinkedList;
 
 public class MySinglyLinkedList {
-    Node head;
-    Node tail;
-    int size;
+    public Node head;
+    public Node tail;
+    public int size;
 
     boolean isEmpty() {
         return head == null;
     }
 
-    void add(int data) {
+    public void add(int data) {
         // create a new object from data
         Node node = new Node(data);
         if (isEmpty()) {//if the list is empty
@@ -26,7 +26,7 @@ public class MySinglyLinkedList {
     }
 
     //singly linked list with deletion
-    void deleteById(int id) {
+    public void deleteById(int id) {
         //check if empty
         // assign previous and current with the head
         if (isEmpty()) {
@@ -69,7 +69,7 @@ public class MySinglyLinkedList {
     }
 
 
-    void printNodes() {
+    public void printNodes() {
         Node current = head;
         while (current != null) {
             if (current.next == null) System.out.println(current.id + "=> null");
@@ -81,7 +81,7 @@ public class MySinglyLinkedList {
 
     }
 
-    int indexOf(int id) {
+    public int indexOf(int id) {
         if (isEmpty()) return -1;
         int position = 0;
         //iterate through the list
@@ -95,7 +95,7 @@ public class MySinglyLinkedList {
 
     }
 
-    void addFirst(int data) {
+    public void addFirst(int data) {
         Node node = new Node(data);
         if (isEmpty()) {
             head = tail = node;

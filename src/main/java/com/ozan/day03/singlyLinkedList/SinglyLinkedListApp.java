@@ -1,6 +1,4 @@
-package com.ozan.day03.demo1;
-
-import java.util.Arrays;
+package com.ozan.day03.singlyLinkedList;
 
 public class SinglyLinkedListApp {
     public static void main(String[] args) {

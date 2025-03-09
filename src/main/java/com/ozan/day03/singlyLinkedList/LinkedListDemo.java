@@ -1,4 +1,4 @@
-package com.ozan.day03.demo1;
+package com.ozan.day03.singlyLinkedList;
 
 import java.util.ArrayList;
 
