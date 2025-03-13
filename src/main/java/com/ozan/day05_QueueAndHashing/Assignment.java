@@ -5,9 +5,9 @@ import java.util.*;
 
 public class Assignment {
     public static void main(String[] args) {
-        Deque<Integer> deque = new ArrayDeque<>(Arrays.asList(10, 20, 30, 40, 50));
-        int k = 4;
-        System.out.println(reversed(deque, k));  // Expected Output: [40, 30, 20, 10, 50]
+        Deque<Integer> deque = new ArrayDeque<>(Arrays.asList(0,1,2,3,4,5));
+        int k = 3;
+        System.out.println(reversed(deque, k));
     }
 
     public static List<Integer> reversed(Deque<Integer> deque, int k) {

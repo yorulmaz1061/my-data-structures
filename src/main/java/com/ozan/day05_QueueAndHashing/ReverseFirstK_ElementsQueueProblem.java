@@ -25,7 +25,7 @@ public class ReverseFirstK_ElementsQueueProblem {
         while(!stack.isEmpty()){
             queue.enqueue(stack.pop());
         }
-        // dequeue and enqueue size of queue -k times
+        // dequeue and enqueue size of queue n-k times
         for (int i = 0; i < queue.size-k ; i++) {
             queue.enqueue(queue.dequeue());
         }
