@@ -1,4 +1,4 @@
-package com.ozan.day07_trees;
+package com.ozan.day07_08_trees;
 
 public class Trunk {
     Trunk prev;

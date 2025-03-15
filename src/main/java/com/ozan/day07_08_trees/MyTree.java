@@ -1,4 +1,4 @@
-package com.ozan.day07_trees;
+package com.ozan.day07_08_trees;
 
 import java.util.LinkedList;
 import java.util.Queue;

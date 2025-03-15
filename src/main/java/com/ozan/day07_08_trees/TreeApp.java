@@ -1,4 +1,4 @@
-package com.ozan.day07_trees;
+package com.ozan.day07_08_trees;
 
 public class TreeApp {
     public static void main(String[] args) {
